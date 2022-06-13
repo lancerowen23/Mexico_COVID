@@ -8,8 +8,10 @@ pacman::p_load(readxl, writexl, dplyr, ggplot2, tidyverse, patchwork, extrafont,
 
 font <- "serif"
 
-#Set directory and export location
+#Set export location
 dir.root <- "" 
+#Set data csv location
+data.dir <- ""
 
 today.date <- format(Sys.Date(), format = "%d_%B_%Y")
 
