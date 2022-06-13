@@ -23,7 +23,6 @@ data.date <- format(Sys.Date()-1, format="%Y%m%d")
 
 
 #download tables
-#source(paste0(code.dir,"1a download mexico data.R"))
 d.mex.cases <- read.csv(paste0(data.dir, "Casos_Diarios_Municipio_Confirmados_", data.date, ".csv"), stringsAsFactors = FALSE, encoding="UTF-8")
 d.mex.deaths <- read.csv(paste0(data.dir, "Casos_Diarios_Municipio_Defunciones_", data.date, ".csv"), stringsAsFactors = FALSE, encoding="UTF-8")
 d.mex.suspected <- read.csv(paste0(data.dir, "Casos_Diarios_Municipio_Sospechosos_", data.date, ".csv"), stringsAsFactors = FALSE, encoding="UTF-8")
