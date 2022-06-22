@@ -13,6 +13,9 @@ dir.root <- ""
 #Set data csv location
 data.dir <- ""
 
+#Format numbers to have thousands separator
+options(fmt.num=structure(list(digits=0, big.mark=","), class="fmt"))
+
 today.date <- format(Sys.Date(), format = "%d_%B_%Y")
 
 dir.create(paste0(dir.root, "EpiCurves/", today.date, "/"))
